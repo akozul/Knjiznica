@@ -4,7 +4,7 @@
       <q-toolbar>
         <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
 
-        <q-toolbar-title> Quasar App Knjiznica </q-toolbar-title>
+        <q-toolbar-title class="text-weight-thin text-h5"> Quasar App Knjiznica </q-toolbar-title>
 
         <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
@@ -76,6 +76,12 @@ const linksList = [
     caption: 'GitHub Knjiznica projekt',
     icon: 'favorite',
     link: 'https://github.com/akozul/Knjiznica.git',
+  },
+  {
+    title: 'Veleučilište u Rijeci',
+    caption: 'Stranica Veleučilišta u Rijeci',
+    icon: 'pageview',
+    link: 'https://veleri.hr',
   },
 ]
 
