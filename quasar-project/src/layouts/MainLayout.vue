@@ -30,6 +30,30 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
   {
+    title: 'Knjižnica početno',
+    caption: 'Knjižnica početno',
+    icon: 'favorite',
+    link: '#/',
+  },
+  {
+    title: 'Knjižnica - popis knjiga',
+    caption: 'KnjiPopis knjiga u knjižnici',
+    icon: 'favorite',
+    link: '#/PopisKnjiga',
+  },
+  {
+    title: 'Knjižnica - nove knjige',
+    caption: 'Nove knjige u knjižnici ',
+    icon: 'favorite',
+    link: '#/noveKnjige',
+  },
+  {
+    title: 'GitHub Knjiznica',
+    caption: 'GitHub Knjiznica projekt',
+    icon: 'favorite',
+    link: 'https://github.com/akozul/Knjiznica.git',
+  },
+  {
     title: 'Docs',
     caption: 'quasar.dev',
     icon: 'school',
@@ -72,16 +96,10 @@ const linksList = [
     link: 'https://awesome.quasar.dev',
   },
   {
-    title: 'GitHub Knjiznica',
-    caption: 'GitHub Knjiznica projekt',
-    icon: 'favorite',
-    link: 'https://github.com/akozul/Knjiznica.git',
-  },
-  {
     title: 'Veleučilište u Rijeci',
     caption: 'Stranica Veleučilišta u Rijeci',
     icon: 'pageview',
-    link: 'https://veleri.hr',
+    link: 'https://veleri.hr'
   },
 ]
 
