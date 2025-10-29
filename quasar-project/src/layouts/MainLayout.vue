@@ -32,25 +32,49 @@ const linksList = [
   {
     title: 'Knjižnica početno',
     caption: 'Knjižnica početno',
-    icon: 'favorite',
+    icon: 'home',
     link: '#/',
   },
   {
     title: 'Knjižnica - popis knjiga',
     caption: 'KnjiPopis knjiga u knjižnici',
-    icon: 'favorite',
+    icon: 'library_books',
     link: '#/PopisKnjiga',
   },
   {
     title: 'Knjižnica - nove knjige',
     caption: 'Nove knjige u knjižnici ',
-    icon: 'favorite',
+    icon: 'book',
     link: '#/noveKnjige',
+  },
+  {
+    title: 'Pretraživanje',
+    caption: 'Pretraživanje',
+    icon: 'pageview',
+    link: '#/pretrazivanje',
+  },
+  {
+    title: 'Lokacija',
+    caption: 'Lokacija',
+    icon: 'location_on',
+    link: '#/lokacija',
+  },
+  {
+    title: 'Login',
+    caption: 'Login',
+    icon: 'login',
+    link: '#/login',
+  },
+  {
+    title: 'Registracija',
+    caption: 'Registracija',
+    icon: 'person_add',
+    link: '#/registracija',
   },
   {
     title: 'GitHub Knjiznica',
     caption: 'GitHub Knjiznica projekt',
-    icon: 'favorite',
+    icon: 'folder_shared',
     link: 'https://github.com/akozul/Knjiznica.git',
   },
   {
@@ -98,7 +122,7 @@ const linksList = [
   {
     title: 'Veleučilište u Rijeci',
     caption: 'Stranica Veleučilišta u Rijeci',
-    icon: 'pageview',
+    icon: 'import_contacts',
     link: 'https://veleri.hr'
   },
 ]

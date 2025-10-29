@@ -1,33 +1,72 @@
 <template>
-  <q-page padding>
-    <!-- content -->
-     <q-toolbar class="bg-grey-9 text-white">
-      <q-toolbar-title>Popis knjiga</q-toolbar-title>
-     </q-toolbar>
-     <div class="q-pa-md" style="max-width: 350px">
-    <q-list bordered separator>
-      <q-item clickable v-ripple>
-        <q-item-section>Popis knjiga</q-item-section>
-      </q-item>
-
-      <q-item clickable v-ripple>
-        <q-item-section>
-          <q-item-label>Vlak u snijegu</q-item-label>
-          <q-item-label caption>Mato Lovrak</q-item-label>
-        </q-item-section>
-      </q-item>
-
-      <q-item clickable v-ripple>
-        <q-item-section>
-          <q-item-label>Item with caption</q-item-label>
-          <q-item-label caption>Caption</q-item-label>
-        </q-item-section>
-      </q-item>
-    </q-list>
+  <div class="q-pa-md">
+    <q-table
+      title="Popis knjiga"
+      :rows="rows"
+      :columns="columns"
+      row-key="name"
+      hide-bottom
+    />
   </div>
-  </q-page>
 </template>
 
-<script setup>
-//
+<script>
+const columns = [
+  {
+    name: 'knjigaID',
+    required: true,
+    label: 'Knjiga ID',
+    align: 'center',
+    field: row => row.name,
+    format: val => `${val}`,
+    style: {
+      fontSize:'14px'
+    },
+    headerStyle: {
+      fontSize: '16px'
+    }
+
+  },
+  { name: 'Naslov', align: 'center', label: 'Naslov', field: 'naslov'},
+  { name: 'Autor', align:'center', label: 'Autor', field: 'autor'},
+  { name: 'Opis', align:'center', label: 'Opis', field: 'opis'},
+  { name: 'Slika', align:'center', label: 'Slika', field: 'slika'},
+  { name: 'Status', align:'center', label: 'Status', field: 'status' }
+  ]
+
+const rows = [
+  {
+    name: 1,
+    naslov: 'Vlak u snijegu',
+    autor: 'Mato Lovrak',
+    opis: 'Opis',
+    slika: 'Slika',
+    status: 'Zauzeta',
+  },
+  {
+    name: 2,
+    naslov: 'Družba Pere Kvržice',
+    autor: 'Mato Lovrak',
+    opis: 'Opis',
+    slika: 'Slika',
+    status: 'Slobodna',
+  },
+  {
+    name: 3,
+    naslov: 'Zločin i kazna',
+    autor: 'Fjodor Mihajlovič Dostojevski',
+    opis: 'Opis',
+    slika: 'Slika',
+    status: 'Zauzeta',
+  }
+]
+
+export default {
+  setup () {
+    return {
+      columns,
+      rows
+    }
+  }
+}
 </script>
