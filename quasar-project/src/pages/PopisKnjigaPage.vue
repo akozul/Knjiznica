@@ -31,25 +31,25 @@ const columns = [
   { name: 'Autor', align:'center', label: 'Autor', field: 'autor'},
   { name: 'Opis', align:'center', label: 'Opis', field: 'opis'},
   { name: 'Slika', align:'center', label: 'Slika', field: 'slika'},
-  { name: 'Status', align:'center', label: 'Status', field: 'status' }
+  { name: 'Stanje', align:'center', label: 'Stanje', field: 'stanje' }
   ]
 
 const rows = [
   {
     name: 1,
-    naslov: 'Vlak u snijegu',
-    autor: 'Mato Lovrak',
-    opis: 'Opis',
+    naslov: 'The Very Hungry Caterpillar',
+    autor: 'Eric Carle',
+    opis: 'As an added bonus, it includes read-aloud audio of Eric Carle reading his classic story. This fine audio production pairs perfectly with the classic story, and it makes for a fantastic new way to encounter this famous, famished caterpillar.',
     slika: 'Slika',
-    status: 'Zauzeta',
+    stanje: 3,
   },
   {
     name: 2,
-    naslov: 'Družba Pere Kvržice',
-    autor: 'Mato Lovrak',
-    opis: 'Opis',
+    naslov: 'Palace of Palms: Tropical Dreams and the Making of Kew',
+    autor: 'Kate Teltscher',
+    opis: 'The body is assaulted by heat, light and the smell of damp vegetation. In Palace of Palms, Kate Teltscher tells the extraordinary story of its creation and of the Victoriansâ€™ obsession with the palms that filled it.',
     slika: 'Slika',
-    status: 'Slobodna',
+    stanje: 1,
   },
   {
     name: 3,
@@ -57,7 +57,7 @@ const rows = [
     autor: 'Fjodor Mihajlovič Dostojevski',
     opis: 'Opis',
     slika: 'Slika',
-    status: 'Zauzeta',
+    stanje: 'Zauzeta',
   }
 ]
 

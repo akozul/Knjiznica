@@ -1,0 +1,29 @@
+<template>
+  <q-page padding>
+    <!-- content -->
+     <h2>{{ poruka }}</h2>
+     <p v-html="poruka"></p>
+     <p v-html="porukica"></p>
+     <p v-html="htmlText"></p>
+     <p v-text="htmlText"></p>
+     <p v-for="item in days" :key="item">
+      <button v-if="item == 'Ponedjeljak'">
+        {{ item }}*
+      </button>
+      <button v-else-if="Item == 'Srijeda'" v-show="false">
+        {{ item }}
+      </button>
+      <button v-else>
+        {{ item }}
+      </button>
+     </p>
+  </q-page>
+</template>
+
+<script setup>
+//
+const poruka = "Test page"
+const porukica = "Ovo je testna stranica za isprobavanje"
+const htmlText = "<p><b>Formatirani tekst na stranici</p></b>"
+const days = ["Ponedjeljak", "Utorak", "Srijeda", "Četvrtak", "Petak", "Subota", "Nedjelja"]
+</script>
