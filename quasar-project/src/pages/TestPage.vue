@@ -1,6 +1,7 @@
 <template>
   <q-page padding>
     <!-- content -->
+     <a :href="link.url" :target="link.target">{{ link.text }}</a>
      <h2>{{ poruka }}</h2>
      <p v-html="poruka"></p>
      <p v-html="porukica"></p>
@@ -17,13 +18,28 @@
         {{ item }}
       </button>
      </p>
+
+     <q-input color="red" v-model="text1" label="Item name" @keyup="log()"></q-input>
   </q-page>
 </template>
 
 <script setup>
-//
+import {ref} from 'vue'
 const poruka = "Test page"
 const porukica = "Ovo je testna stranica za isprobavanje"
 const htmlText = "<p><b>Formatirani tekst na stranici</p></b>"
 const days = ["Ponedjeljak", "Utorak", "Srijeda", "Četvrtak", "Petak", "Subota", "Nedjelja"]
+
+
+const text1 = ref('')
+text1.value = "Helo"
+function log(){
+  console.log(text1.value)
+}
+
+const link = {
+  url: 'http://www.google.com',
+  target:'_blank',
+  text: 'Google' 
+}
 </script>
