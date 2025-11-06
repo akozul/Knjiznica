@@ -27,12 +27,11 @@
 import {ref} from 'vue'
 const poruka = "Test page"
 const porukica = "Ovo je testna stranica za isprobavanje"
-const htmlText = "<p><b>Formatirani tekst na stranici</p></b>"
 const days = ["Ponedjeljak", "Utorak", "Srijeda", "Četvrtak", "Petak", "Subota", "Nedjelja"]
 
 
 const text1 = ref('')
-text1.value = "Helo"
+text1.value = "Hello"
 function log(){
   console.log(text1.value)
 }
