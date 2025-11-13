@@ -69,12 +69,16 @@ const author = ref('')
 const text = ref('')
 
 function openMsg() {
-  open.value--
+  if (open.value>0) {
+    open.value--
+  }
   console.log('Uključ ' + open.value)
 }
 
 function deleteMsg() {
-  unread.value--
+  if (unread.value>0){
+    unread.value--
+  }
   console.log('Isključ ' + unread.value)
 }
 

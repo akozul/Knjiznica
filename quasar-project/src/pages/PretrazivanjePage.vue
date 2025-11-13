@@ -1,12 +1,11 @@
 <script setup>
 import { ref } from 'vue'
 
-// Reaktivne vrijednosti
 const query = ref('')
 const searchByAuthor = ref(false)
 const searchByTitle = ref(false)
 
-// Definicija stupaca
+
 const columns = [
   { name: 'knjigaID', required: true, label: 'Knjiga ID', align: 'center', field: 'knjigaID' },
   { name: 'Naslov', align: 'center', label: 'Naslov', field: 'naslov' },
@@ -16,14 +15,14 @@ const columns = [
   { name: 'Stanje', align: 'center', label: 'Stanje', field: 'stanje' }
 ]
 
-// Prazan niz redaka
+
 const rows = ref([])
 </script>
 
 <template>
   <div class="q-pa-md">
 
-    <!-- Polje za pretraživanje -->
+    
     <div class="q-gutter-md row items-center q-mb-md">
       <q-input filled v-model="query" label="Pretraži knjige..." class="col-6" />
 
@@ -35,7 +34,7 @@ const rows = ref([])
       <q-btn label="Traži" color="primary" class="q-ml-md" />
     </div>
 
-    <!-- Prazna tablica -->
+    
     <q-table
       title="Rezultati pretraživanja"
       :rows="rows"
